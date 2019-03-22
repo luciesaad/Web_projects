@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<a href="index.html"> <img id="logo" src="img/logo.jpg" alt="logo"/> </a>
+
+<div id="subscribe">
+    <h3>Subscribe to our weekly newsletter!</h3>
+
+    <form>
+
+        <label id="lbl"> Enter e-mail: </label>
+        <input type="email" id="entermail" required/> <div id="feedback"></div>
+
+        <input type="submit" value="Subscribe" id="button" />
+
+    </form>
+</div>
+
+<nav>
+    <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="trips.html"> Tours </a> </li>
+        <li> <a href="info.html"> Practical Information </a>  </li>
+        <li> <a href="about.html"> About Us </a> </li>
+        <li> <a href="feedback.html"> Feedback </a> </li>
+    </ul>
+</nav>
+
+<section id="formfeedback">
+    <h1 id="indent"> Are you missing information? <br> Have you liked/disliked our service? <br> Let us know! </h1>
+    <form>
+        <label for="username">Your name: </label><input class="formular" type="text" id="username" name="username" /><br>
+        <label for="country"> Your country: </label><textarea class="formular" id="country" name="feedback"></textarea> <br>
+        <label for="thoughts">Your thoughts: </label><textarea class="formular" id="thoughts" name="feedback"></textarea> <br>
+        <input class="formular2" type="submit" value="Send" />
+    </form>
+</section>
+
+<script src="js/interact.js"></script>
+<script src="js/modernizr.2.7.1.js"></script>
+<script src="js/feedback.js"></script>
+</body>
+</html>

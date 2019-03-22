@@ -1,0 +1,24 @@
+{
+  "taxis": [
+    {
+      "name": "AAA Taxi",
+      "price": "22 CZK"
+    },
+    {
+      "name": "Prg Auto",
+      "price": "22 CZK"
+    },
+    {
+      "name": "Book Taxi",
+      "price": "23 CZK"
+    },
+    {
+      "name": "ictaxi.cz",
+      "price": "24 CZK"
+    },
+    {
+      "name": "City Taxi",
+      "price": "25 CZK"
+    }
+  ]
+}

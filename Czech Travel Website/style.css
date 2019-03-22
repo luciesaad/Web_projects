@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:300,400');
+
+/*mobile first*/
+    body {
+        background: #70BBB4 url("img/prague_bright.png");
+        background-repeat: repeat-y;
+    }
+#firsttext {
+    margin-right: 20px;
+}
+
+
+    #logo {
+        height: 17%;
+        width: 17%;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+
+    #tripadvisor {
+        float: right;
+        height: 22%;
+        width: 22%;
+    }
+
+    a:link {
+        font-family: 'Nanum Myeongjo', serif;
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    h1, h2 {
+        color: #b29000;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 28px;
+    }
+
+    p {
+        color: black;
+        font-family: 'Gothic A1', sans-serif;
+        font-size: 17px;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    nav ul li {
+        font-size: 25px;
+        font-family: 'Nanum Myeongjo', serif;
+        font-weight: bold;
+        padding: 10px 30px 10px 0px;
+        list-style-type: none;
+        line-height: 30%;
+    }
+
+    article {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 20px;
+        padding: 50px;
+        margin: 10px;
+        background-color: rgba(255, 255, 255, 0.65);
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    ul.social li {
+        padding: 10px;
+        display: inline;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: initial;
+    }
+
+    #words {
+        flex: 60%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #numbers {
+        flex: 40%;
+        padding: 20px;
+        background-color: rgba(255, 222, 173, 0.6);
+        font-family: 'Gothic A1', sans-serif;
+    }
+
+    .pictures {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    h4 {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    .city {
+        padding: 20px;
+        margin: 0px 10px 10px 10px;
+
+    }
+
+    article p {
+        text-align: justify;
+        line-height: 150%;
+    }
+
+    button {
+        float: right;
+        border: 2px solid #b29000;
+        border-radius: 6px;
+        background-color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    button:hover {
+        background-color: #FFDEAD;
+    }
+
+/* feedback FORM settings*/
+    #formfeedback {
+        background: hsla(0, 100%, 100%, 0.7);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .formular {
+        width: 90%;
+        margin: 20px;
+        padding: 5px;
+        font-family: 'Gothic A1', sans-serif;
+
+    }
+    label {
+        padding: 20px;
+        font-weight: bold;
+    }
+    #indent {               /*h1*/
+        padding: 20px;
+        font-family: 'Nanum Myeongjo', serif
+    }
+
+    .formular2 {           /*button*/
+        width: 40%;
+        margin: 20px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid #b29000;
+        border-radius: 6px;
+    }
+    .formular2:hover {      /* button hover*/
+        background-color: #FFDEAD;
+
+    }
+
+/* upper subscribe FORM settings*/
+#subscribe {
+    display: none;
+}
+/* Subscribe FORM settings - displayed under main text in mobile + tablet, index-page only! */
+#subscribeMobile {
+    background-color: hsla(0, 100%, 100%, 0.7);
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: normal;
+    margin: 10px;
+    padding: 20px 20px 10px 50px;
+
+}
+#lblMobile {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    padding: 0;
+}
+#enterMobile {
+    padding: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#buttonMobile {
+    background-color: white;
+    border: 2px solid #b29000;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px;
+}
+#feedbackMobile {
+    padding-top: 10px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+}
+/* end subscribe FORM settings*/
+
+/*JSON:  "practical information" page*/
+
+.taxiprague {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 100%, 100%, 0.7);
+    margin:10px;
+    padding: 20px;
+}
+.taxiname {
+    color: #b29000;
+}
+#content {
+    display: flex;
+}
+#content div {
+    text-align: center;
+    flex: 20%;
+    border: #FFDEAD solid;
+    border-radius: 6px;
+    margin: 5px;
+}
+.taxiprice {
+    display: inline;
+    font-size: 15px;
+}
+#taxipic {
+    display: none;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-repeat: no-repeat;
+    }
+
+    logo {
+        height: 15%;
+        width: 15%;
+    }
+
+    #tripadvisor {
+        float: right;
+        height: 15%;
+        width: 15%;
+        margin-left: 20px;
+    }
+
+
+    nav {
+        text-align: center;
+        background-color: hsla(0, 100%, 100%, 0.7);
+        margin: 10px;
+    }
+
+    nav ul li {
+        font-size: 23px;
+        font-weight: normal;
+        font-family: 'Nanum Myeongjo', serif;
+        line-height: normal;
+        padding: 10px;
+        display: inline;
+    }
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: #b29000;
+
+    }
+    #firsttext {
+        margin-right: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+    }
+    article p {
+        text-align: justify;
+        line-height: 130%;
+    }
+}
+
+
+    /*desktop*/
+    @media screen and (min-width: 1025px) {
+        body {
+            background: #70BBB4 url("img/prague_bright.png") no-repeat;
+        }
+
+        #logo {
+            height: 10%;
+            width: 10%;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+        #tripadvisor {
+            float: right;
+            height: 10%;
+            width: 10%;
+            margin-left: 40px;
+        }
+
+        #color {
+            height: 30%;
+            width: 30%;
+        }
+
+        #firsttext {
+            margin-right: 20px;
+        }
+
+        /*Hides the lower subscribe form */
+        #subscribeMobile {
+            display: none;
+        }
+
+        /* Subscribe form settings, every html page */
+        #subscribe {
+            display: inline-block;
+            float: right;
+            height: 150px;
+            max-width: 35%;
+            background-color: hsla(0, 100%, 100%, 0.7);
+            border-radius: 6px;
+            font-family: 'Nanum Myeongjo', serif;
+            line-height: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        h3 {
+            margin-left: 18px;
+            font-size: 17px;
+            font-family: 'Nanum Myeongjo', serif;
+            color: #b29000;
+        }
+
+        #lbl {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        #button {
+            background-color: white;
+            border: 2px solid #b29000;
+            border-radius: 6px;
+            margin: 18px;
+            padding: 2px;
+        }
+
+        #feedback {
+            padding: 18px;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        /* end subscribe form setting*/
+        a:hover {
+            color: #b29000;
+        }
+
+        h1, h2 {
+            font-size: 28px;
+            padding-bottom: 0px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: white;
+            background-color: hsla(0, 100%, 100%, 0.7);
+            margin: 70px 10px 10px 10px;
+        }
+
+        nav ul li {
+            font-size: 25px;
+            font-family: 'Nanum Myeongjo', serif;
+            font-weight: normal;
+            line-height: normal;
+            display: inline;
+            padding: 10px 30px 10px 0px;
+        }
+
+        article {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: initial;
+        }
+
+        #words {
+            flex: 70%;
+            margin-right: 30px;
+        }
+
+        #numbers {
+            flex: 30%;
+            background-color: rgba(255, 222, 173, 0.7);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr;
+
+        }
+
+        .city {
+            padding: 20px;
+            margin: 0px 10px 10px 10px;
+
+        }
+
+        article p {
+            text-align: justify;
+            line-height: 140%;
+        }
+
+        button {
+            font-size: 18px;
+        }
+
+        /*JSON:  "practical information" page*/
+        .taxiprague {
+            display: flex;
+            flex-direction: row;
+            background-color: hsla(0, 100%, 100%, 0.7);
+            margin: 10px;
+            padding: 20px;
+        }
+
+
+
+        #content {
+            flex: 20%;
+            flex-direction: column;
+
+        }
+        #content div {
+            border: none;
+        }
+        #taxipic {
+            display: flex;
+            flex: 80%;
+            width: 300px;
+            height: auto;
+        }
+    }
