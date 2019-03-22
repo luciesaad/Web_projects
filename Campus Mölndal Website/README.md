@@ -23,6 +23,7 @@ när ni gör design, UX och funktionalitetför hemsidan.
 <ul> • Ni arbetar (kontinuerligt) med wireframes/prototyper fördesignen av hemsidan. </ul>
 <ul> • Gruppen ska själva skriva relevanta User stories som går att bryta ner till krav/funktioner som kan delas upp och färdigställas
   inom gruppen. </ul>
+</li>
   
 <h3>My contribution:</h3>
 My part encompasses, amoung others, the scss files, as I mainly focused on the visual aspects of the site. My goal was to be
