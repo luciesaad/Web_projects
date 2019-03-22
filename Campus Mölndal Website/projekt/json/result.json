@@ -1,0 +1,33 @@
+{
+  "result" : [
+    {
+      "image" : "images/it.jpg",
+      "title" : "Java- och webbutvecklare",
+      "text" : "Det här är utbildningen som ger dig kompetens inom både system- och webbutveckling, vilket gör dig unik och mycket eftertraktad på arbetsmarknaden."
+    },
+    {
+      "image" : "images/moln.jpg",
+      "title" : "Moln- och virtualiseringsspecialist",
+      "text" : "En modern IT-tekniker behöver både kunna sätta upp fysiska nätverk med kablar och annan hårdvara och samtidigt skapa virtuella nätverk i ”molnet”."
+    },    {
+      "image" : "images/Projektledare.jpg",
+      "title" : "IT-projektledare",
+      "text" : "om IT-projektledare arbetar du med att ta fram kundanpassade systemlösningar tillsammans med din kund och ditt team. Du ansvarar för att driva förstudier och projekt enligt relevant projektmodell och kvalitetskrav."
+    },
+    {
+      "image" : "images/LSS.jpg",
+      "title" : "Aktiveringspedagog inom LSS",
+      "text" : "Vill du arbeta med att göra vardagen mer aktiv och meningsfull för personer som har en utvecklingsstörning, autism eller som har fått en hjärnskada som vuxen?"
+    },
+    {
+      "image" : "images/sprak.jpg",
+      "title" : "Specialiserad studiehandledare",
+      "text" : "Du som läser den här utbildningen får kunskaper om pedagogik och IKT, svensk skolkultur, handledning och språkinlärning. Efter avslutad utbildning kan du arbeta med att handleda nyanlända elever inom grundskolan, gymnasieskolan eller vuxenutbildningen. "
+    },
+    {
+      "image" : "images/campus.jpg",
+      "title" : "Kunde inte matcha dig med någon utbildning",
+      "text" : "Kunde inte matcha dig med någon utbildning, Läs gärna mer om de olika utbildningarna vi erbjuder eller kontakta oss så hjälper vi dig så gott vi kan"
+    }
+  ]
+}

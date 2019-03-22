@@ -1,0 +1,1060 @@
+//mobile first:
+
+@import "simplevariables";
+
+
+body {
+  background-color: $background-color;
+  margin: 0;
+
+  p  {
+    font-family: $font-text;
+    font-size: $p-mobile;
+    color: $color-text;
+    text-align: justify;
+  }
+  h1 {
+    font-family: $font-headline;
+    font-size: $h-mobile;
+    color: $color-link;
+  }
+  h2 {
+    font-size: $h-mobile;
+    color: $color-link;
+  }
+
+
+}
+
+//Janna: Slideshow
+
+.slideshow {
+  margin: 0;
+  padding-top: 150px;
+
+  .img-slide {
+    width: 100%;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: $margin/2 0 0 0;
+    padding: 0;
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      color: black;
+      background-color: rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      font-size: 15px;
+      transition: 2s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+  }
+
+  .slide-text {
+    color: $color-text;
+    font-family: $font-headline;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    h1 {
+      max-width: 35%;
+      text-align: left;
+      margin: $margin*2 0 0 $margin*3;
+      color: $color-link;
+      font-size: 20px;
+      font-family: $font-headline;
+    }
+    #slideText1, #slideText2 {
+      display: none;
+    }
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s ease;
+    z-index: 1;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .7
+    }
+    to {
+      opacity: 1
+    }
+  }
+}
+
+//Lucie
+#welcome {
+  margin: $margin*5 $margin*4 $margin*2 $margin*4;
+
+  .centered {
+    text-align: center;
+  }
+  .special {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-text;
+    margin: $margin*2 $margin*3 0 $margin*3;
+  }
+}
+
+#grid-container-option {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  margin: $margin*2 $margin*2 0 $margin*2;
+
+  h1 {
+    text-align: left;
+    a, br {
+      text-decoration: none;
+      font-size: 25px;
+      font-family: $font-headline;
+      color: $color-link;
+      padding: 10px 0 10px 4%;
+    }
+
+  }
+
+  #testOption {
+    margin-bottom: $margin*2;
+    background: url("../images/img2.jpg") center no-repeat;
+    height: 100px;
+    border-radius: 3px;
+
+    .modalButton {
+      border: none;
+      background-color: rgba(white, 0);
+      display: block;
+      height: 100%;
+      width: 100%;
+      font-family: $font-headline;
+      font-size: $h-mobile;
+      font-weight: bold;
+      text-align: left;
+      color: $color-link;
+      margin-top: 0;
+      outline: none;
+      padding-left: 20px;
+      cursor: pointer;
+
+    }
+  }
+
+  #contactOption {
+    //margin: $margin $margin/2 $margin $margin/2;
+    background: url("../images/img4.jpg") 56% 1% no-repeat;
+    height: 100px;
+    border-radius: 3px;
+
+    a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      p {
+        font-family: $font-headline;
+        font-size: $h-mobile;
+        font-weight: bold;
+        color: $color-link;
+        margin-top: $margin;
+
+        padding-left: 20px;
+        max-width: 36%;
+      }
+
+    }
+  }
+}
+
+#percentil {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0 $margin*2 0 $margin*2;
+  background-color: $secondary-background;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+
+  p {
+    text-align: center;
+    font-weight: lighter;
+    //padding: 0 0 5px 40px;
+
+    b {
+      text-align: center;
+      font-family: $font-headline;
+    }
+
+  }
+
+  #mySquare1 {
+    img {
+      width: 20%;
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+
+    .special-headline {
+      font-size: $h-mobile;
+      font-weight: bold;
+      color: $color-link;
+    }
+
+  }
+
+  #mySquare2 {
+    img {
+      width: 20%;
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+    .special-headline {
+      font-size: 30px;
+      font-weight: bold;
+      color: $color-link;
+    }
+  }
+
+  #mySquare3 {
+    img {
+      width: 20%;
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto;
+    }
+    .special-headline {
+      font-size: 30px;
+      font-weight: bold;
+      color: $color-link;
+    }
+  }
+}
+//entire container grid start
+#grid-container-review {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+  .myReview {
+    display: none;
+    margin: 0; //added latest, cant find solution to the sliding under the frame around 415 px width
+  }
+  .reviewPart {
+    margin: $margin*2;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+      border-radius: 3px;
+    }
+  }
+
+  //calendar
+  #grid-container-calender {
+    margin: 0 $margin*2 0 $margin*2;
+    text-align: center;
+    background: $secondary-background;
+    border-radius: 3px;
+
+    #upcomingEvents {
+      #separator {
+        border: 0;
+        height: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      }
+      .something {
+        height: 30%;
+        margin: 0;
+
+        #jsdate {
+          max-height: 50px;
+          text-align: left;
+          padding-left: 20px;
+
+        }
+        #jstime {
+          // text-align: left;
+          padding-left: 20px;
+          margin: 0;
+          font-weight: bold;
+        }
+
+        #jstext {
+          text-decoration: none;
+          text-align: left;
+          color: $color-text;
+          font-family: $font-text;
+          padding-left: 20px;
+          margin: 0;
+        }
+
+        b {
+          text-align: center;
+          font-size: 17px;
+          border: 1px solid #eeeeee;
+          width: 100px;
+          padding: 5px;
+          color: $color-link;
+        }
+      }
+
+    }
+  }
+  #subscribe-container {
+    display: flex;
+    flex-direction: column;
+    margin: $margin*2;
+    background-color: $secondary-background;
+
+    #subscribeText {
+        margin: auto auto;
+      }
+
+    h4 {
+      font-size: $h-mobile;
+      font-family: $font-headline;
+      color: $color-link;
+      text-align: left;
+      display: inline;
+      //margin-top: 40px;
+     // margin-left: 30px;
+    }
+
+    .modalButton {
+      object-fit: none;
+      border: none;
+      background-color: black;
+      font-family: $font-text;
+      font-size: $p-mobile;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      outline: none;
+      padding: 10px;
+      width: 70%;
+      height: 40%;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: $margin auto $margin auto;
+    }
+    .modalButton:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+  }
+}
+#news {
+  margin: $margin*2;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+  .newsHeader {
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+  }
+  h2 {
+    padding: 10px;
+  }
+
+  #newsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: $margin;
+
+  .newsArticle {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+  }
+
+  .newsImage {
+    width: 100%;
+  }
+
+  .newsTitle {
+  }
+
+  .newsText {
+    background: -webkit-linear-gradient(black 10%, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .newsOnlyText {
+
+  }
+  .readMoreBtn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 6px 12px;
+
+
+  }
+  .readMoreBtn:hover {
+    background-color: $footer-color;
+  }
+  .readMoreBtn:focus {
+    outline: none;
+  }
+
+  .readMoreText {
+    display: none;
+    text-align: left;
+    margin: 0 auto;
+  }
+  }
+
+  #moreNews {
+    margin: 100px 0 $margin 0;
+    text-align: center;
+
+    #moreNewsText {
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      padding: 8px 16px;
+
+    }
+    #moreNewsText:hover {
+      background-color: $footer-color;
+    }
+  }
+  .newsHeader {
+    text-align: center;
+  }
+
+#modal-update {
+
+  margin: 0 auto;
+  max-width: 80%;
+
+  h1 {
+
+  }
+}
+
+#subscribeForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: center;
+  margin: 5%;
+
+
+
+  #subscriberEmail {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: $font-text;
+    border-style: none;
+
+  }
+
+  #subscribeSubmit {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 6px 12px;
+    width: 20%;
+    margin: $margin auto 0 0;
+  }
+
+  p {
+  }
+}
+
+#testForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#testImage {
+  width: 100%;
+  margin: $margin;
+}
+#testOption1, #testOption2, #testOption3 {
+  display: inline-block;
+  font-size: $p-desktop;
+  vertical-align: center;
+  margin: $margin;
+}
+.testRadio {
+  top: 10px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: $margin;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  border: 0;
+  border-radius: 50px;
+  outline: none;
+  box-shadow: 1px 1px #3c3c3c;
+}
+.testRadio:hover {
+  background-color: #ddd;
+}
+.testRadio:checked::before {
+  position: absolute;
+  font: 13px/1 'Open Sans', sans-serif;
+  left: 11px;
+  top: 7px;
+  content: '\02143';
+  transform: rotate(40deg);
+}
+.form-radio:checked {
+  background-color: white;
+}
+
+#testQuestion {
+  font-size: $h-mobile;
+  text-align: center;
+}
+#testButtons {
+  display: flex;
+  justify-content: space-between;
+}
+#testNext, #testPrev, #testFinish, #testClose {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 6px 12px;
+  margin: $margin;
+}
+
+#testNext:hover {
+  background-color: $footer-color;
+}
+#testPrev:hover {
+  background-color: $footer-color;
+}
+#testFinish:hover {
+  background-color: $footer-color;
+}
+#testClose:hover {
+  background-color: $footer-color;
+}
+
+
+
+#modal {
+  max-height: 100%;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 100%;
+  //overflow: hidden;
+
+
+}
+#modal-content {
+  background-color: #f4f4f4;
+  margin: 1% auto 10% auto;
+  padding: 20px;
+  width: 70%;
+  color: black;
+  border-radius: 1%;
+  border: #aeaeae 5px solid;
+  max-width: 100%;
+  max-height: 95vh;
+
+}
+
+
+#closeBtn {
+  grid-column: 3;
+  color: black;
+  float: right;
+  font-size: 30px;
+}
+#closeBtn:hover, .closeBtn:focus {
+  color: $footer-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#footer {
+  background-color: $footer-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0;
+  p {
+    text-align: center;
+    color: white;
+  }
+  a {
+    color: $color-link;
+  }
+
+  text-align: center;
+  .start_img2 {
+    max-width: 100%;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+hr {
+  display: block;
+  height: 0.5px;
+  border: 0;
+  border-top: 0.5px solid #e8e8e8;
+  margin: $margin 0;
+  padding: 0;
+}
+
+//tablet 768px-1024px   -- note: why 1126 specifically? --Lucie
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    h1,h2,h3 {
+      font-size: $h-desktop;
+    }
+  }
+
+  .slideshow {
+    .slideshow-container {
+
+      .prev, .next {
+        padding: 16px;
+        font-size: 18px;
+      }
+    }
+
+    .slide-text {
+
+      h1 {
+        max-width: 40%;
+        margin: 30px 0 0 50px;
+        font-size: $h-mobile;
+      }
+
+      #slideText1 {
+        display: block;
+        max-width: 35%;
+        margin-left: 50px;
+        text-align: left;
+      }
+      #slideText2 {
+        display: none;
+      }
+    }
+  }
+
+  #welcome {
+    margin: $margin*5 $margin*5 $margin*2 $margin*5;
+
+    .special {
+      margin: 0;
+    }
+  }
+
+  #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: $margin;
+
+    #testOption {
+      margin: $margin*2;
+      background: url("../images/img2.jpg") 58% 10% no-repeat;
+      height: 120px;
+    }
+
+    #contactOption {
+      margin: $margin*2;
+      background: url("../images/img4.jpg") 58% 1% no-repeat;
+      height: 120px;
+    }
+
+  }
+
+  #grid-container-review {
+    display: grid;
+    grid-template-columns: 66% 30%;
+    grid-template-rows: auto auto;
+    margin: $margin *2;
+    grid-gap: 4%;
+
+    .reviewPart {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    #grid-container-calender {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      background: $secondary-background;
+      margin: 0;
+
+      h1 {
+        margin: 0 5px;
+      }
+
+      #upcomingEvents {
+        max-height: 100%;
+
+        .something {
+          height: 100%;
+          margin: $margin;
+
+          #separator {
+            width: 100%;
+          }
+
+          b {
+            font-size: 16px;
+          }
+          #jstime {
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            margin-left: 12px;
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+          p {
+            text-align: center;
+            margin: 0;
+
+          }
+
+        }
+
+      }
+    }
+
+    #subscribe-container {
+      background-color: $secondary-background;
+      flex-direction: row;
+      border-radius: 3px;
+      grid-column: 1;
+      grid-row: 2;
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+      margin: 0;
+
+      #subscribeText {
+        margin: auto $margin;
+        padding: 15px;
+      }
+      h4 {
+        color: $color-link;
+        font-family: $font-headline;
+
+      }
+
+      .modalButton {
+        background-color: black;
+        display: inline;
+        flex-direction: row;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        margin: auto $margin auto auto;
+      }
+      .modalButton:hover {
+        background-color: #9C292D;
+        color: white;
+        //scale??
+      }
+
+    }
+
+  }
+  #modal-content {
+    width: 50%;
+  }
+}
+
+
+  //desktop >1025px
+@media screen and (min-width: 1025px) {
+
+  .slideshow {
+    padding-top: 100px;
+
+    .slideshow-container {
+      .prev, .next {
+        padding: 16px;
+        font-size: 18px;
+      }
+    }
+
+    .slide-text {
+
+      h1 {
+        max-width: 40%;
+        margin: 50px 0 0 60px;
+        font-size: 35px;
+      }
+
+      #slideText1, #slideText2 {
+        display: block;
+        max-width: 40%;
+        margin-left: 60px;
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  #welcome {
+    margin: $margin;
+
+    p {
+      margin: 0 150px;
+      text-align: justify;
+    }
+    .special {
+      margin: 20px;
+    }
+    h1 {
+      font-size: $h-desktop*1.5;
+    }
+  }
+
+  #grid-container-option {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    //margin-bottom: 20px;
+    grid-gap: $margin;
+    margin: 0 $margin 0 $margin;
+
+    #testOption {
+      //margin: $margin $margin/2 $margin $margin/2;
+      background: url("../images/img2.jpg") /*50% 70%*/
+      center no-repeat;
+      height: 200px;
+      width: 100%;
+    }
+
+    #contactOption {
+      //margin: $margin $margin/2 $margin $margin/2;
+      background: url("../images/img4.jpg") center top no-repeat;
+      height: 200px;
+
+      a {
+        p {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+
+  #percentil {
+    margin: 0 $margin $margin $margin;
+
+    #mySquare1, #mySquare2, #mySquare3 {
+      img {
+        max-width: 10%;
+      }
+    }
+  }
+  //entire grid container lucie
+  #grid-container-review {
+    display: grid;
+    grid-template-columns: 66% 30%;
+    grid-template-rows: auto auto;
+    margin-left: $margin;
+    grid-gap: $margin;
+
+    .reviewPart {
+      margin: 0;
+      padding: 0;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    #grid-container-calender {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      margin:0;
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+
+      #upcomingEvents {
+        height: 100%;
+        margin: 0;
+
+        .something {
+          height: 30%;
+          margin: $margin;
+
+          #separator {
+            width: 100%;
+          }
+
+          b {
+            font-size: 16px;
+          }
+          #jstime {
+            font-size: 16px;
+            text-align: left;
+            font-weight: bold;
+            margin-left: 12px;
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+          p {
+            text-align: center;
+            margin: 0;
+
+          }
+        }
+
+      }
+    }
+
+    #subscribe-container {
+      margin: 0;
+      flex-direction: row;
+
+      #subscribeText {
+        margin: auto $margin;
+        padding: 20px;
+      }
+      .modalButton {
+        margin: auto $margin auto auto;
+        width: 30%;
+      }
+    }
+  }
+
+  #news {
+    margin: $margin;
+
+    #newsSection {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .readMoreBtn {
+      margin: 0 auto;
+    }
+    #moreNews {
+      margin: $margin*2 0 $margin 0;
+      text-align: center;
+
+    }
+  }
+
+  #modal {
+    max-height: 100%;
+  }
+  #modal-content {
+    width: 42%;
+    margin: 1% auto;
+    padding-bottom: 100px;
+  }
+  #footer {
+    grid-template-columns: 1fr 1fr;
+    .footer_two {
+      grid-column-start: 3;
+      grid-column-end: 1;
+    }
+
+  }
+}
+
+
+
+
+
+
+

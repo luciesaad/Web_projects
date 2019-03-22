@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/Application.css">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Campus Mölndal</title>
+</head>
+<body>
+<header>
+
+
+    <nav class="navbar">
+        <div class="navFiller">
+            <span class="opennav navChange" onclick="openNav()">&#9776;</span>
+            <a class="logo1" href="index.html"><img src="images/campuslogo2.png"></a>
+
+            <div id="mySidenav" class="sidenav navChange">
+                <a href="javascript:void(0)" class="closebtn navChange" onclick="closeNav()">&times; Close</a>
+                <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
+
+                <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" class="navChange"/> <p class="navChange">Utbildn..</p></a>
+                <a href="#" class="dropdown-icon navChange"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" class="navChange" onclick="myFunction('utb-links')"/></a>
+                <div id="utb-links">
+                    <a href="#">Yrkeshögskola</a>
+                    <a href="#">Grundläggande Gymna...</a>
+                    <a href="#">SFI</a>
+                    <a href="#">Företags Utbildningar</a>
+                    <a href="Utbildningar.html">Alla Utbildningar</a>
+
+
+
+                </div>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
+                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
+
+                <div onclick="mysearchFunction1()">
+                    <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png" class="searchOpen navChange"><p  class="searchOpen navChange">Sök</p></a>
+                </div>
+                <div id="searchDropdown" class="dropdown-search1">
+                    <div id="my-search-Dropdown1" class="dropdown-search-content1">
+                        <input type="text" placeholder="Search.." class="searchOpen navChange" id="myInput1" onkeyup="filterFunction1()">
+                        <a href="#Studier">Studier</a>
+                        <a href="#Företag">Företag</a>
+                        <a href="Utbildningar.html">Utbildningar</a>
+                        <a href="Contact.html">Kontakt</a>
+                        <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                        <a href="javaweb.html">Java- och webbutvecklare</a>
+                        <a href="#Sfi">Sfi</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <ul class="logonav">
+                <div id="logoid">
+                    <a class="logo" href="index.html"><img src="images/campuslogo1.png"></a>
+                </div>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                    <li class="utb-li">
+                        <div class="hover-nav-links">
+                            <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><span class="icon_text">Ansök</span></a>
+                        </div>
+                        <div id="utb-linkspc">
+                            <a href="#">Yrkeshögskola</a>
+                            <a href="#">Grundläggande Gymna...</a>
+                            <a href="#">SFI</a>
+                            <a href="#">Företags Utbildningar</a>
+                            <a href="Utbildningar.html">Alla Utbildningar</a>
+                        </div>
+                    </li>
+                    </li>
+
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span onclick="myFunction('utb-linkspc')" class="icon_text">Utbildningar</span></a>
+                    </div>
+
+
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><span class="icon_text">Studier</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><span class="icon_text">Företag</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="dropdown-search">
+                                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><span class="icon_text">Kontakt</span></a>
+                                <div id="my-search-Dropdown" class="dropdown-search-content">
+                                    <input type="text" placeholder="Search.." class="searchOpen" id="myInput" onkeyup="filterFunction()">
+                                    <a href="#Studier">Studier</a>
+                                    <a href="#Företag">Företag</a>
+                                    <a href="Utbildningar.html">Utbildningar</a>
+                                    <a href="Contact.html">Kontakt</a>
+                                    <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                                    <a href="javaweb.html">Java- och webbutvecklare</a>
+                                    <a href="#Sfi">Sfi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="searchOpen" onclick="mysearchFunction()">
+                                <a href="#" class="nav-links searchOpen"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"  class="searchOpen" /><span class="icon_text searchOpen">Sök</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+
+</header>
+
+<section id="ansokan">
+
+    <h1>Ansökan</h1>
+
+    <div id="personalInformation">
+
+        <h2>Personuppgifter</h2>
+        <div class="separator"> </div>
+
+
+        <form id="form" >
+            <label><b>Namn</b></label>
+            <input type="text" class="forms" name="name" /><br>
+            <label><b>Personnummer</b></label>
+            <input type="text" class="forms" name="nr" />
+
+            <label ><b>Adress</b></label>
+            <input class="forms" name="address"/>
+
+            <label ><b>Email</b></label>
+            <input class="forms" name="email"/>
+
+        </form>
+
+        <p><b>Kön</b></p>
+        <div class="app">
+
+
+            <div class="applyRadio" id="man">
+                <label for="male">Man</label>
+                <input type="radio" name="gender" id="male" class="form-radio" value="male">
+            </div>
+            <div class="applyRadio" id="kvinna">
+                <label for="female">Kvinna</label>
+                <input type="radio" name="gender" id="female" class="form-radio" value="female">
+            </div>
+            <div class="applyRadio" id="annan">
+                <label for="other">Annat</label>
+                <input type="radio" name="gender" id="other" class="form-radio" value="other">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Utbildninginformation</h2>
+        <div class="separator"></div>
+
+
+        <p><b>Utbildning</b></p>
+
+        <select class="forms">
+            <optgroup label="Yrkesutbildningar">
+                <option value="IT-projektledare">IT-projektledare</option>
+                <option value="Java- och webbutvecklare">Java- och webbutvecklare</option>
+                <option value="Moln- och virtualiseringsspecialist">Moln- och virtualiseringsspecialist</option>
+                <option value="Specialiserad studiehandledare">Specialiserad studiehandledare</option>
+                <option value="Aktiveringspedagog inom LSS">Aktiveringspedagog inom LSS</option>
+            </optgroup>
+            <optgroup label="Vuxenutbildningar">
+                <option value="Grundläggande Vuxenutbildning">Grundläggande Vuxenutbildning</option>
+                <option value="Gynasial Vuxenutbildning">Gynasial Vuxenutbildning</option>
+            </optgroup>
+            <optgroup label="SFI">
+                <option value="mercedes">Svenska för invandrare</option>
+
+            </optgroup>
+            <optgroup label="Företagsutbildningar ">
+                <option value="Uppdragsutbildningar">Uppdragsutbildningar</option>
+                <option value="Yrkesutbildningar">Yrkesutbildningar</option>
+            </optgroup>
+        </select>
+
+
+        <div>
+
+            <p><b>Kommer du ansöka om CSN</b></p>
+            <div class="app">
+                <div class="applyRadio">
+                    <label for="ja" >Ja</label>
+                    <input type="radio" name="csn" id="ja" class="form-radio" value="ja">
+                </div>
+                <div >
+                    <label for="female">Nej</label>
+                    <input type="radio" name="csn" id="nej" class="form-radio" value="nej">
+
+                </div>
+            </div>
+            <!--  <div>
+                  <p> <b>Vilket datum ska du söka in till</b></p>
+                  <input type="date" id="myDate" value="2019-01-28">
+                  <p><br></p>
+             </div>-->
+
+
+            <p><b>Övriga kommentarer</b></p>
+            <textarea class="forms" id="text" name="forms"></textarea>
+
+            <input id= "knapp" type="submit" value="Ansök" />
+
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer">
+    <section>
+        <p> CAMPUS MÖLNDAL <br>
+            Vägledningsexpedition <br>
+            - för dig som vill studera<br>
+            031-315 10 14<br>
+
+            <a href="mailto:vagledning.campus@molndal.se">vagledning.campus@molndal.se</a> <br>
+
+        </p>
+    </section>
+    <section>
+        <p> CAMPUS MÖLNDAL <br>
+            Skolexpedition <br>
+            - för dig som är elev <br>
+            031-315 31 30 <br>
+
+            <a href="mailto:skolexp.campus@molndal.se">skolexp.campus@molndal.se</a> <br>
+
+    </section>
+
+    <section class="footer_two">
+        <a href="https://www.molndal.se/" target="_blank">
+
+            <img src="images/loga.png" alt="" class="start_img2" />
+        </a>
+    </section>
+
+</footer>
+
+
+<script src="javaScript/jquery-3.3.1.min.js"></script>
+<script src="javaScript/jsnav.js"></script>
+</body>
+</html>

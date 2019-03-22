@@ -1,0 +1,7 @@
+CREATE TABLE News(
+	ArticleID INT NOT NULL AUTO_INCREMENT,
+	ArticleImage VARCHAR(50),
+	ArticleTitle VARCHAR(50),
+	ArticleText VARCHAR(50),
+	PRIMARY KEY (ArticleID)
+);

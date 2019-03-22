@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Campus Mölndal</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navFiller">
+            <span class="opennav navChange" onclick="openNav()">&#9776;</span>
+            <a class="logo1" href="index.html"><img src="images/campuslogo2.png"></a>
+
+            <div id="mySidenav" class="sidenav navChange">
+                <a href="javascript:void(0)" class="closebtn navChange" onclick="closeNav()">&times; Close</a>
+                <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
+
+                <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" class="navChange"/> <p class="navChange">Utbildn..</p></a>
+                <a href="#" class="dropdown-icon navChange"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" class="navChange" onclick="myFunction('utb-links')"/></a>
+                <div id="utb-links">
+                    <a href="#">Yrkeshögskola</a>
+                    <a href="#">Grundläggande Gymna...</a>
+                    <a href="#">SFI</a>
+                    <a href="#">Företags Utbildningar</a>
+                    <a href="Utbildningar.html">Alla Utbildningar</a>
+
+
+
+                </div>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
+                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
+
+                <div onclick="mysearchFunction1()">
+                    <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png" class="searchOpen navChange"><p  class="searchOpen navChange">Sök</p></a>
+                </div>
+                <div id="searchDropdown" class="dropdown-search1">
+                    <div id="my-search-Dropdown1" class="dropdown-search-content1">
+                        <input type="text" placeholder="Search.." class="searchOpen navChange" id="myInput1" onkeyup="filterFunction1()">
+                        <a href="#Studier">Studier</a>
+                        <a href="#Företag">Företag</a>
+                        <a href="Utbildningar.html">Utbildningar</a>
+                        <a href="Contact.html">Kontakt</a>
+                        <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                        <a href="javaweb.html">Java- och webbutvecklare</a>
+                        <a href="#Sfi">Sfi</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <ul class="logonav">
+                <div id="logoid">
+                    <a class="logo" href="index.html"><img src="images/campuslogo1.png"></a>
+                </div>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                    <li class="utb-li">
+                        <div class="hover-nav-links">
+                            <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><span class="icon_text">Ansök</span></a>
+                        </div>
+                        <div id="utb-linkspc">
+                            <a href="#">Yrkeshögskola</a>
+                            <a href="#">Grundläggande Gymna...</a>
+                            <a href="#">SFI</a>
+                            <a href="#">Företags Utbildningar</a>
+                            <a href="Utbildningar.html">Alla Utbildningar</a>
+                        </div>
+                    </li>
+                    </li>
+
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span onclick="myFunction('utb-linkspc')" class="icon_text">Utbildningar</span></a>
+                    </div>
+
+
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><span class="icon_text">Studier</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><span class="icon_text">Företag</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="dropdown-search">
+                                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><span class="icon_text">Kontakt</span></a>
+                                <div id="my-search-Dropdown" class="dropdown-search-content">
+                                    <input type="text" placeholder="Search.." class="searchOpen" id="myInput" onkeyup="filterFunction()">
+                                    <a href="#Studier">Studier</a>
+                                    <a href="#Företag">Företag</a>
+                                    <a href="Utbildningar.html">Utbildningar</a>
+                                    <a href="Contact.html">Kontakt</a>
+                                    <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                                    <a href="javaweb.html">Java- och webbutvecklare</a>
+                                    <a href="#Sfi">Sfi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="searchOpen" onclick="mysearchFunction()">
+                                <a href="#" class="nav-links searchOpen"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"  class="searchOpen" /><span class="icon_text searchOpen">Sök</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<section id="contactMain">
+    <h1 id="contacthead">Kontaktinformation</h1>
+    <div id="contact">
+        <article>
+            <h2>Vägledningsexpedition</h2>
+            <p>
+                Vägledningsexpeditionen kontaktar du om du har frågor eller funderingar kring ditt studie- eller yrkesval - oavsett hur gammal du är. <br>
+                Hit kan du också vända dig om du vill göra en anmälan till någon av våra utbildningar. <br> <br>
+
+                <strong>Telefon: </strong> 031-315 10 14<br>
+                <a href="mailto:vagledning.campus@molndal.se">vagledning.campus@molndal.se</a> <br>
+                <br>
+                <strong> Öppetider:</strong> <br>
+                Måndag & onsdag 13:00-15:00 <br>
+                Tisdag, torsdag & fredag 10:00-12:00 <br>
+                <br>
+            </p>
+        </article>
+        <article class="article_2">
+            <div style="width: 100%">
+                <iframe
+                        width="100%"
+                        height="280"
+                        src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=G%C3%B6teborgsv%C3%A4gen%2097%2C%20ing%C3%A5ng%201%20+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0">
+                    <a href="https://www.maps.ie/create-google-map/">Embed Google Map</a>
+
+                </iframe></div><br />
+            <p> <i>Krokslätts fabriker 12a, 431 37 Mölndal </i> </p>
+        </article>
+
+        <article>
+
+            <h2>Skolexpeditionen</h2>
+            <p>
+                På skolexpeditionen hanteras det mesta som rör dig som redan är studerande inom Campus Mölndal. <br>
+                <br>
+                <strong> Telefon </strong> 031-315 31 30 <br>
+                <a href="mailto:skolexp.campus@molndal.se">skolexp.campus@molndal.se</a> <br>
+
+                <br>
+                <strong>  Öppetider: </strong> <br>
+                Måndag - fredag 09:00-12:00 <br>
+                Måndag, tisdag & torsdag 13:00-15:00 <br>
+
+            </p>
+            <p>
+                <a href="https://www.facebook.com/campusmolndal/" target="_blank">
+                    <img src="images/faceloga.png" width="50" height="50" alt=""  />
+                </a>
+            </p>
+        </article>
+
+        <article class="article_2">
+            <div style="width: 100%"><iframe
+                    width="100%"
+                    height="280px"
+                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=m%C3%B6lndal%20campus+(M%C3%B6ndal%20campus)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0">
+                <a href="https://www.maps.ie/create-google-map/">Create Google Map</a></iframe></div>
+            <p><i>Göteborgsvägen 97, 431 37 Mölndal</i></p>
+        </article>
+    </div>
+
+</section>
+
+
+<footer id="footer">
+
+    <div>
+        <p> CAMPUS MÖLNDAL <br>
+            Vägledningsexpedition <br>
+            - för dig som vill studera<br>
+            031-315 10 14<br>
+
+            <a href="mailto:vagledning.campus@molndal.se">vagledning.campus@molndal.se</a> <br>
+
+        </p>
+    </div>
+    <div>
+        <p> CAMPUS MÖLNDAL <br>
+            Skolexpedition <br>
+            - för dig som är elev <br>
+            031-315 31 30 <br>
+
+            <a href="mailto:skolexp.campus@molndal.se">skolexp.campus@molndal.se</a> <br>
+
+    </div>
+
+    <section class="footer_two">
+        <a href="https://www.molndal.se/" target="_blank">
+
+            <img src="images/loga.png" alt="" class="start_img2" />
+        </a>
+    </section>
+
+</footer>
+
+
+<script src="javaScript/jquery-3.3.1.min.js"></script>
+<script src="javaScript/jsnav.js"></script>
+</body>
+</html>

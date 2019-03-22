@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/javaweb.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Campus Mölndal</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navFiller">
+            <span class="opennav navChange" onclick="openNav()">&#9776;</span>
+            <a class="logo1" href="index.html"><img src="images/campuslogo2.png"></a>
+
+            <div id="mySidenav" class="sidenav navChange">
+                <a href="javascript:void(0)" class="closebtn navChange" onclick="closeNav()">&times; Close</a>
+                <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><p>Ansök</p></a>
+
+                <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" class="navChange"/> <p class="navChange">Utbildn..</p></a>
+                <a href="#" class="dropdown-icon navChange"><img src="https://img.icons8.com/metro/30/ffffff/expand-arrow.png" class="navChange" onclick="myFunction('utb-links')"/></a>
+                <div id="utb-links">
+                    <a href="#">Yrkeshögskola</a>
+                    <a href="#">Grundläggande Gymna...</a>
+                    <a href="#">SFI</a>
+                    <a href="#">Företags Utbildningar</a>
+                    <a href="Utbildningar.html">Alla Utbildningar</a>
+
+
+
+                </div>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><p>Studier</p></a>
+                <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><p>Företag</p></a>
+                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><p>Kontakt</p></a>
+
+                <div onclick="mysearchFunction1()">
+                    <a href="#" class="nav-links navChange"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png" class="searchOpen navChange"><p  class="searchOpen navChange">Sök</p></a>
+                </div>
+                <div id="searchDropdown" class="dropdown-search1">
+                    <div id="my-search-Dropdown1" class="dropdown-search-content1">
+                        <input type="text" placeholder="Search.." class="searchOpen navChange" id="myInput1" onkeyup="filterFunction1()">
+                        <a href="#Studier">Studier</a>
+                        <a href="#Företag">Företag</a>
+                        <a href="Utbildningar.html">Utbildningar</a>
+                        <a href="Contact.html">Kontakt</a>
+                        <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                        <a href="javaweb.html">Java- och webbutvecklare</a>
+                        <a href="#Sfi">Sfi</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <ul class="logonav">
+                <div id="logoid">
+                    <a class="logo" href="index.html"><img src="images/campuslogo1.png"></a>
+                </div>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                    <li class="utb-li">
+                        <div class="hover-nav-links">
+                            <a href="apply.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/reviewer-male-filled.png"/><span class="icon_text">Ansök</span></a>
+                        </div>
+                        <div id="utb-linkspc">
+                            <a href="#">Yrkeshögskola</a>
+                            <a href="#">Grundläggande Gymna...</a>
+                            <a href="#">SFI</a>
+                            <a href="#">Företags Utbildningar</a>
+                            <a href="Utbildningar.html">Alla Utbildningar</a>
+                        </div>
+                    </li>
+                    </li>
+
+                    <div class="hover-nav-links">
+                        <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/graduation-cap-filled.png" onclick="myFunction('utb-linkspc')"/><span onclick="myFunction('utb-linkspc')" class="icon_text">Utbildningar</span></a>
+                    </div>
+
+
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/school-filled.png"/><span class="icon_text">Studier</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <a href="#" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/company-filled.png"/><span class="icon_text">Företag</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="dropdown-search">
+                                <a href="Contact.html" class="nav-links"><img src="https://img.icons8.com/ios/50/E75459/phone-filled.png"/><span class="icon_text">Kontakt</span></a>
+                                <div id="my-search-Dropdown" class="dropdown-search-content">
+                                    <input type="text" placeholder="Search.." class="searchOpen" id="myInput" onkeyup="filterFunction()">
+                                    <a href="#Studier">Studier</a>
+                                    <a href="#Företag">Företag</a>
+                                    <a href="Utbildningar.html">Utbildningar</a>
+                                    <a href="Contact.html">Kontakt</a>
+                                    <a href="#Yrkeshögskola">Yrkeshögskola</a>
+                                    <a href="javaweb.html">Java- och webbutvecklare</a>
+                                    <a href="#Sfi">Sfi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hover-nav-links">
+                            <div class="searchOpen" onclick="mysearchFunction()">
+                                <a href="#" class="nav-links searchOpen"><img src="https://img.icons8.com/ios/50/E75459/search-filled.png"  class="searchOpen" /><span class="icon_text searchOpen">Sök</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+
+
+</header>
+
+<section class="java-utb">
+    <div class="snabbfakta-container">
+        <div class="snabbfakta">
+            <img src="images/img6.jpg" class="img-fakta">
+            <div class="fakta-text">
+                <h1>Java &amp; <br id="breaking-txt"> webbutveckling</h1>
+                <h2 class="hide">Snabbfakta:</h2>
+                <ul class="hide">
+                    <li>Yrkesexamen</li>
+                    <li>2 år, Heltid</li>
+                    <li>LIA - 24 veckor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="group">
+    <div id="sec1">
+
+        <h1>Är du intresserad av IT och programmering?</h1>
+
+        <p id="visible">Det här är utbildningen som ger dig kompetens inom både system- och webbutveckling,
+            vilket gör dig unik och mycket eftertraktad på arbetsmarknaden.
+        </p>
+    </div>
+
+    <div id="sec2">
+        <!--<img src="images/gubbe.jpg" class="gubbe">-->
+    </div>
+
+    <div id="sec3">
+
+        <h1> Innehåll i utbildningen </h1>
+        <p>Du lär dig objektorienterad programmering i Java och webbutveckling, med HTML, CSS, JavaScript och
+            PHP. Du lär dig att programmera i JavaScriptramverk som t ex. Jquery, Angular och Node. </p>
+        <p> Utbildningen har stort fokus på Java- och webbutveckling, men du kommer också lära dig databashantering,
+            webbinnehållshanteringssystemen (CMS) och webbtjänster (web services). Du kommer även att lära
+            dig om versionshantering och verktyget Git som används i större systemutvecklingsprojekt. Du kommer
+            också att få kunskaper om olika agila metoder med fokus på Scrum och Lean. </p>
+        <p> För att testa och kvalitetssäkra ditt arbete lär du dig dessutom om testdriven utveckling (TDD) och
+            om att utveckla system med god kodstandard och struktur. Under utbildningen varvas praktiska och laborativa
+            moment med teoretiska moment. Kurserna LIA 1 och LIA 2 är förlagda till företag, där du lär dig genom att
+            arbeta med ”riktiga” projekt. Samtidigt får du värdefulla branschkontakter.
+        </p>
+    </div>
+
+    <div id="sec4">
+
+        <h2>Kurser som du läser:</h2>
+        <ul class="lista-kurser">
+            <li>Agil systemutveckling 15 p</li>
+            <li>Databasutveckling 25 p</li>
+            <li>Datalogi 20 p</li>
+            <li>Objektorienterad programmering i Java 50 p</li>
+            <li>Systemutveckling i Java Enterprise Edition 40 p</li>
+            <li>Test och kvalitetssäkring 20</li>
+            <li>Webbutveckling 50 p</li>
+            <li>Webbutveckling inriktning ramverk 30 p</li>
+            <li>Examensarbete 30 p</li>
+            <li>LIA 1 (lärande i arbete) 60 p</li>
+            <li>LIA 2 (lärande i arbete) 60 p<br></li>
+        </ul>
+
+    </div>
+</section>
+<hr>
+<section id="section-ansokan">
+    <div id="ansok1">
+        <h1>Är du behörig att söka?</h1>
+        <p>För att söka denna utbildning behöver du uppfylla grundläggande behörighet
+            samt nedanstående särskilda förkunskaper.
+        </p>
+
+        <ul>
+            <li>Engelska 6 eller motsvarande</li>
+            <li>Matematik 2a/c eller motsvarande</li>
+        </ul>
+
+        <p>Saknas betyg i ovanstående erbjuds nivåtest</p>
+
+        <ul>
+            <li>Programmering 1 eller motsvarande*</li>
+            <li>Webbutveckling 1 eller motsvarande*</li>
+        </ul>
+
+        <p>Saknar du ett betyg eller har tidigare kunskaper med dig inom området? <br>
+            *Behörighetsgivande utbildning kan erbjudas för att få behörighet i kurserna programmering
+            1 och webbutveckling 1.</p>
+    </div>
+
+    <div id="ansok2">
+        <h1> ANSÖKAN: </h1>
+        <p>Ansökan för start HT 2019 öppnar snart!</p>
+        <p> Du kan <a href="apply.html"> skicka din  intresseanmälan</a> redan idag.</p>
+    </div>
+
+</section>
+
+
+<footer id="footer">
+    <section>
+        <p> CAMPUS MÖLNDAL <br>
+            Vägledningsexpedition <br>
+            - för dig som vill studera<br>
+            031-315 10 14<br>
+
+            <a href="mailto:vagledning.campus@molndal.se">vagledning.campus@molndal.se</a> <br>
+
+        </p>
+    </section>
+    <section>
+        <p> CAMPUS MÖLNDAL <br>
+            Skolexpedition <br>
+            - för dig som är elev <br>
+            031-315 31 30 <br>
+
+            <a href="mailto:skolexp.campus@molndal.se">skolexp.campus@molndal.se</a> <br>
+
+    </section>
+
+    <section class="footer_two">
+        <a href="https://www.molndal.se/" target="_blank">
+
+            <img src="images/loga.png" alt="" class="start_img2" />
+        </a>
+    </section>
+
+</footer>
+
+
+<script src="javaScript/jquery-3.3.1.min.js"></script>
+<script src="javaScript/jsnav.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "slides": [
+    {
+      "image": "images/img1.jpg",
+      "title": "SFI",
+      "text1": "Du lär dig tala, läsa, skriva och förstå svenska. Du tränar på att använda svenska i vardagslivet, arbetslivet och i samhället.",
+      "text2": "Du som studerar SFI på Campus Mölndal har 15 timmar schemalagda studier per vecka. Du kan också studera på kvällstid - 3 timmar per vecka. Utbildningen är gratis och efter avslutad kurs får du betyg."
+    },
+    {
+      "image": "images/img2.jpg",
+      "title": "Gymnasial utbildning",
+      "text1": "Utbildning på gymnasienivå har samma läroplan och följer samma kursplaner som på gymnasiet, men innehåll och studieupplägg är anpassat för vuxna.",
+      "text2": "Till exempel är studierna mer koncentrerade och antalet undervisningstimmar färre."
+    },
+    {
+      "image": "images/img3.jpg",
+      "title": "Gymnasial vuxenutbildning",
+      "text1": "En yrkesutbildning ger dig de kunskaper och färdigheter du behöver för att arbeta inom ett visst yrke.",
+      "text2": "Praktik ingår och utbildningstiden kan vara olika lång beroende på utbildning. En yrkesutbildning passar dig som har behov av att byta yrkesbana, saknar gymnasieutbildning eller vill komplettera din yrkesutbildning."
+    },
+    {
+      "image": "images/img4.jpg",
+      "title": "Yrkeshögskola",
+      "text1": "Yrkeshögskoleutbildning i Sverige är en eftergymnasial utbildningsform som kombinerar teoretiska studier med stark arbetslivsanknytning.",
+      "text2": "Utbildningarna är avgiftsfria och CSN-berättigande. 9/10 har jobb efter avslutad utbildning."
+    },
+    {
+      "image": "images/img5.jpg",
+      "title": "IT-projektledare",
+      "text1": "Som IT-projektledare arbetar du med att ta fram kundanpassade systemlösningar tillsammans med din kund och ditt team.",
+      "text2": "Du ansvarar för att driva förstudier och projekt enligt relevant projektmodell och kvalitetskrav. Efter utbildningen kommer du kunna arbeta med resurs- och tidsplanering, kostnadsuppföljning och rapportering."
+    }
+  ]
+}

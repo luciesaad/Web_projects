@@ -1,0 +1,331 @@
+@import "simplevariables";
+
+// welcome image
+#image-section {
+  display: grid;
+  height: 100%;
+  margin-bottom: 30px;
+  padding-top: 150px;
+
+  #utb-container { //container with the image and text over it
+    position: relative;
+
+
+    .start_img3 {
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+    }
+
+    #over-image-txt {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      margin: 20px;
+
+      h1 {
+        font-family: $font-headline;
+        font-size: $h-mobile;
+        margin: 0;
+      }
+      p {
+        max-width: 35%;
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+      }
+      #txt-hide { //part of the p-text is hidden on smaller screens
+        display: none;
+      }
+    }
+  }
+}
+
+//whole section under image
+#utbildningar {
+  margin: 20px $margin $margin $margin;
+
+  h1 {
+    text-align: left;
+  }
+
+  p {
+    margin: $margin*3;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  //filter
+  #myBtnContainer {
+    display: grid;
+    margin-bottom: 3%;
+    grid-gap: $margin;
+
+    .btn {
+      font-size: $p-mobile;
+      font-weight: lighter;
+      border: none;
+      outline: none;
+      padding: 5px 0;
+      background-color: white;
+      position: relative;
+      color: $color-text;
+      cursor: pointer;
+      border-radius: 3px;
+      height: 40px;
+      transition: clip-path;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: $color-link;
+      color: white;
+    }
+  }
+
+  //buttons that are filtered: .container contains all that
+  .container {
+    display: grid;
+    grid-gap: 2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    a {
+      height: 100%;
+      width: 70%;
+      margin-left: 15%;
+    }
+    .filterDiv {
+      background-color: hsla(0, 0%, 24%, 0.6);
+      color: white;
+      font-family: $font-text;
+      //width: 70%;
+      text-align: center;
+      //margin: 0 0 0 15%;
+      display: none; /* Hidden by default */
+      padding: 2px;
+      border-radius: 3px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    }
+
+    .filterDiv:hover {
+      background-color: black;
+      color: $color-link;
+
+    }
+    p {
+      padding: 5px;
+      margin: 0;
+    }
+
+    // The "show" class is added to the filtered elements
+    .show {
+      display: block;
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  #image-section {
+    margin-bottom: 40px;
+
+    #utb-container {
+
+      #over-image-txt {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 20px;
+
+        h1 {
+          font-family: $font-headline;
+          font-size: 40px;
+          margin: 20px 0;
+        }
+        p {
+          max-width: 45%;
+          font-size: $p-desktop;
+          text-align: left;
+          margin: 0;
+        }
+      }
+    }
+
+
+  }
+
+  #utbildningar {
+    margin: 80px $margin*2 50px $margin*2;
+
+    #myBtnContainer {
+      grid-template-columns: repeat(5, 1fr);
+      //margin: $margin;
+
+      .btn {
+        height: auto;
+        padding: 10px;
+        margin: 0;
+      }
+    }
+
+    .container {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -5px;
+
+      a {
+        margin: 0;
+        height: 100%;
+        width: auto;
+        //margin: 5px;
+
+      }
+
+      .filterDiv {
+        background-color: hsla(0, 0%, 24%, 0.6);
+        color: white;
+        font-family: $font-text;
+        text-align: center;
+        display: none; /* Hidden by default */
+        padding: 5px;
+        border-radius: 3px;
+      }
+
+      .filterDiv:hover {
+        background-color: white;
+        color: $color-link;
+
+      }
+      p {
+        padding: 5px;
+        margin: 0;
+      }
+
+      // show class
+      .show {
+        display: block;
+      }
+      .hide {
+        display: none;
+      }
+    }
+
+  }
+
+}
+// end tablet, start desktop
+
+@media screen and (min-width: 1025px) {
+
+  #image-section {
+    margin-bottom: 40px;
+    padding-top: 100px;
+
+    #utb-container {
+
+      #over-image-txt {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        margin: 20px 20px 20px 30px;
+
+        h1 {
+          font-family: $font-headline;
+          font-size: 40px;
+          margin: 20px 0 20px 0;
+
+        }
+        p {
+          max-width: 45%;
+          font-size: $p-desktop;
+          text-align: left;
+          margin: 0;
+        }
+        #txt-hide {
+          display: block;
+        }
+
+      }
+    }
+
+
+  }
+
+  #utbildningar {
+    margin: 80px $margin*2 50px $margin*2;
+
+    #myBtnContainer {
+      grid-template-columns: repeat(5, 1fr);
+      //margin: $margin;
+
+      .btn {
+        height: auto;
+        padding: 10px;
+        margin: 0;
+      }
+    }
+
+    .container {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -5px;
+
+      a {
+        height: 100%;
+        width: auto;
+        margin: 5px;
+      }
+    }
+      .filterDiv {
+        background-color: hsla(0, 0%, 24%, 0.6);
+        color: white;
+        font-family: $font-text;
+        text-align: center;
+        display: none; /* Hidden by default */
+        padding: 5px;
+        border-radius: 3px;
+        margin: 5px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        .filterDiv:hover {
+          background-color: white;
+          color: $color-link;
+
+        }
+        p {
+          padding: 5px;
+          margin: 0;
+        }
+
+        // show class
+        .show {
+          display: block;
+        }
+        .hide {
+          display: none;
+        }
+      }
+
+    }
+  }
+

@@ -1,0 +1,527 @@
+/* Joshua css navbar - moved to scss*/
+/*@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.logo {
+    display: none;
+}
+#utb-links {
+    position: relative;
+    background-image: linear-gradient(200deg, #C33E47  0%, #ff757a 100%);
+    display: none;
+    width: 100%;
+}
+.dropdown-icon {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 70%;
+}
+
+#utb-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+#utb-links a:hover {
+    background-color: #54E97B;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(200deg, #54E97B  0%, #ff757a 100%);
+    border: 1px solid black;
+    padding-bottom: 40px;
+    height: 150px;
+}
+
+.main-nav {
+    display: none;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.nav-links  {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.nav-links p {
+    color: white;
+    font-size: 20px;
+    float: right;
+    margin-right: 30%;
+
+}
+.nav-links :hover {
+ transform: scale(1.2); }
+
+.hover-nav-links :hover img{
+    transform: scale(1.2);
+}
+.hover-nav-links :hover p {
+    transform: scale(1.2);
+}
+.main-nav li {
+    margin-left: 22px;
+}
+
+.logo1 {
+    display: block;
+    text-align: center;
+    margin-top: -30px;
+}
+.active {
+    display: block;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.opennav {
+    display: flex;
+    margin-right: 5vh;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 40px;
+
+}
+
+@media screen and (min-width: 1126px) {
+    #utb-linkspc {
+        position: absolute;
+        margin-top: 20px;
+        display: none;
+
+    }
+
+    #utb-linkspc a {
+        color: white;
+        background-color: #ff757a;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #utb-linkspc a:hover {
+        background-color: #54E97B;
+    }
+
+    .opennav {
+
+        display: none;
+
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    #main {
+        display: none;
+    }
+
+    .nav-links {
+        margin-left: 20px;
+        margin-right: 0;
+        padding: 0px 40px;
+        justify-content: flex-end;
+
+    }
+
+    .utb-li {
+        z-index: 2;
+    }
+
+    .image-text {
+        display: none;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 200px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+    }
+
+    .main-nav li {
+        margin-right: 22px
+    }
+
+    #utb-links {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: -790px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+        position: relative;
+        padding: 40px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+
+    }
+
+    .nav-links p {
+        font-size: 20px;
+        float: none;
+        margin-left: 35%;
+
+    }
+
+    .logo {
+        display: block;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+}
+ Joshua css navbar */
+
+/* Janna slideshow              -- has been added to scss, no desktop settings available so far:
+
+.img-slide {
+    width: 100%;
+}
+
+.slideshow-container {
+    max-width: 75%;
+    position: relative;
+    margin: auto ;
+    padding: 50px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text p {
+    font-family: sans-serif;
+    color: #6E6A6A;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+.headtext {
+    font-family: sans-serif;
+    color: #6E6A6A;
+    font-size: 45px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+}
+/* janna slideshow */
+
+/* alex -- has been added to scss:
+
+.footer_two{grid-column-start: 3;
+    grid-column-end: 1;
+
+}
+.start_img2{
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+} */
+
+/* Lucie - style welcome -- has been added to scss:
+
+#header-education {
+    margin: 0 100px 0 100px;
+}
+.centered {
+    text-align: center;
+}
+h1 p {
+    text-align: justify;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Calibri Light", Serif;
+}
+a {
+    text-decoration: none;
+    color: #fcf2ef;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: center;
+}
+.education {
+    margin: 10px;
+    color: #fcf2ef;
+    text-align: center;
+    padding: 10px;
+    max-width: 768px;
+    height: 100px;
+}
+#it {
+    background: linear-gradient(hsla(136, 77%, 62%,0.4), hsla(136, 77%, 62%,0.4)), url("../images/it.jpg") no-repeat;
+    transition: height 2s;
+}
+#it:hover {
+    /*box-shadow: 0 0 50px 1px hsla(209, 53%, 16%, 0.7);*/
+    /*transform: scale(1.05);*/
+    /*height: 110px;
+}
+#language {
+    background: linear-gradient(hsla(358, 100%, 73%, 0.5), hsla(358, 100%, 73%, 0.5)), url("../images/sprak.jpg") center no-repeat;
+}
+#language:hover {
+    transition: width 3s;
+}
+#care {
+    background: linear-gradient(hsla(358, 58%, 39%, 0.5), hsla(358, 58%, 39%, 0.5)), url("../images/vard.jpg") center no-repeat;
+
+}
+
+button {
+    background: transparent;
+    border: 2px solid hsla(358, 77%, 62%, 0.5);
+    position: center;
+    margin-left: 40%;
+    transition-duration: 0.6s;
+}
+button:hover {
+    background: hsla(358, 77%, 62%, 0.5);
+    color: #fcf2ef;
+    font-size: 20px;
+}
+
+#percentil {
+    display: grid;
+    background-color: hsla(358, 100%, 73%, 0.2);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+#percentil p {
+    text-align: right;
+}
+#percentil h1 {
+    text-align: left;
+}
+.square {
+
+}*/
+
+/*@media screen and (min-width: 1024px) {   -- has been changed, therefore not added to scss:
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;}
+    .education {
+        margin: 10px;
+        height: 200px;
+    }
+}*/
+
+/*Lucie - style recommendation and calendar -- have been added to scss:
+.myReview{display: none;}
+
+#grid-container-review {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
+    margin: 10px;
+    padding: 10px;
+}
+.reviewPart {
+    padding: 0 20px 20px 20px;
+}
+
+Lucie end!*/
+
+/*Wictor for now -- has been added to scss:
+#news {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.newsImage {
+    max-width: 100%;
+
+}
+.newsText {
+    max-width: 100%;
+}
+article p {
+    display: inline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    color: black;
+}
+.closeBtn {
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+.closeBtn:hover,.closeBtn:focus {
+    color: #790009;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) { --has been added to scss MQ
+    #news {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Wictor end, please someone fix this i'm sad trying to read all of this (this file) -- I'm on it! Lucie*/
+

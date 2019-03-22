@@ -1,0 +1,32 @@
+{
+  "questions" : [
+    {
+      "question" : "IT?",
+      "image": "images/testIT.png",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
+    },
+    {
+      "question" : "Design?",
+      "image": "images/testDesign.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
+    },
+    {
+      "question" : "Jobba med människor?",
+      "image": "images/testFolk.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
+    },
+    {
+      "question" : "Jobba inom LSS",
+      "image": "images/testLSS.jpeg",
+      "option1" : "Mycket",
+      "option2" : "Lite",
+      "option3" : "Inte alls"
+    }
+  ]
+}

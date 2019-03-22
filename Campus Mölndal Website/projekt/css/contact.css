@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+#contactMain {
+  padding-top: 150px; }
+
+h1 {
+  text-align: center; }
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  position: center;
+  grid-gap: 15px 50px;
+  max-width: 90%;
+  margin: 0 auto; }
+  #contact h2 {
+    margin-top: 0px;
+    text-align: center; }
+
+@media screen and (min-width: 1025px) {
+  #contact {
+    grid-template-columns: 1fr 1fr; }
+
+  #contactMain {
+    padding-top: 100px; }
+
+  #contacthead {
+    margin: 2%;
+    text-align: center; } }
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,249 @@
+@import "simplevariables";
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+
+.java-utb {
+  padding-top: 150px;
+
+  .snabbfakta-container {
+    max-width: 100%;
+    position: relative;
+    padding: 0;
+  }
+  .img-fakta {
+    width: 100%;
+  }
+
+  .snabbfakta {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fakta-text {
+    color: $color-text;
+    font-family: $font-headline;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-left: $margin*2;
+    h1 {
+      text-align: left;
+      margin: $margin 0 0 $margin;
+      font-size: 25px;
+      font-family: $font-headline;
+      color: $color-link;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin: 0 0 0 2%;
+    }
+    .hide {
+      display: none;
+    }
+    ul {
+      margin: 0;
+
+      li {
+        font-family: $font-text;
+        max-width: 40%;
+        text-align: left;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  margin: 0 $margin*2;
+  p {
+    text-align: left;
+  }
+
+  #sec1 {
+    margin: 0 $margin;
+    .hide {
+      display: none;
+    }
+  }
+  #sec2 {
+    display: none;
+  }
+  #sec3 {
+    margin: 0 $margin;
+  }
+  #sec4 {
+    margin: 0 $margin;
+    li {
+      font-family: $font-text;
+    }
+  }
+} // end of the grid
+
+
+#section-ansokan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  margin: 0 $margin*2;
+  p {
+    text-align: left;
+  }
+
+
+  #ansok1 {
+    margin: 0 $margin;
+
+    li {
+      font-family: $font-text;
+      font-size: $p-mobile;
+    }
+  }
+  #ansok2 {
+    margin: 0 $margin;
+  }
+
+} // end of ansokan grid section
+
+// end 'mobile first'
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .java-utb {
+    margin-top: 15px;
+
+    .fakta-text {
+      top: 20px;
+      left: 10px;
+      h1 {
+        font-size: $h-desktop;
+      }
+
+      h2 {
+        font-size: $p-mobile;
+      }
+      .hide {
+        margin-top: 20px;
+        display: block;
+      }
+      ul {
+        margin: 0;
+
+        li {
+          max-width: 100%;
+          margin: 0;
+          font-size: $p-desktop;
+        }
+      }
+    }
+  }
+
+  .group {
+    margin: 0 $margin;
+  }
+
+  #section-ansokan {
+    margin: 0 $margin;
+  }
+}
+//end tablet
+
+@media only screen and (min-width: 1025px) {
+  .java-utb {
+    margin-top: 15px;
+    padding-top: 100px;
+
+    .fakta-text {
+      top: 40px;
+      left: 20px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+      .hide {
+        margin-top: 30px;
+        display: block;
+      }
+      ul {
+        margin: 0;
+
+        li {
+          max-width: 100%;
+          margin: 0;
+          font-size: $p-desktop;
+        }
+      }
+    }
+  }
+  h1 {
+    margin-left: $margin*2;
+  }
+
+  .group {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: 50px $margin*2 $margin $margin*2;
+    grid-gap: $margin;
+
+    h1{
+      margin-left: 0;
+    }
+    p {
+      text-align: justify;
+    }
+
+    #sec1 {
+      height: auto;
+      margin-left: 0;
+
+      #visible {
+        margin-top: 0;
+      }
+    }
+    #sec2 {
+      display: block;
+    }
+    #sec3 {
+      margin-left: 0;
+    }
+    #sec4 {
+      padding-left: 50px;
+      h2 {
+        font-size: $h-desktop;
+        color: $color-link;
+      }
+      ul {
+        padding-left: 17px;
+      }
+    }
+  }
+
+  #section-ansokan {
+    margin: 0 $margin*2 50px $margin*2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    h1 {
+      margin-left: 0;
+    }
+    #ansok1 {
+      margin: 0;
+    }
+
+    #ansok2 {
+      padding-left: 50px;
+    }
+  }
+
+}
