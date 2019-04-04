@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  font-family: "Indie Flower", cursive;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFF;
+}
+
+.score-panel {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.timer {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(30px, auto);
+}
+
+.grid-center {
+  grid-column: 1/7;
+  justify-self: center;
+}
+
+.memory-game-logo-img {
+  height: 180px;
+  width: auto;
+  margin-top: 1em;
+}
+
+.memory-game-difficulty {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline;
+}
+
+.levelButton {
+  margin-top: 0.3em;
+  width: 64px;
+  height: 64px;
+}
+
+.btnBrick {
+  width: 96px;
+  text-align: center;
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2dabf9", endColorstr="#0688fa",GradientType=0);
+  background-color: #2dabf9;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #0081a8;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+.bigBtnBlue {
+  width: 96px;
+  text-align: center;
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2dabf9", endColorstr="#0688fa",GradientType=0);
+  background-color: #2dabf9;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #0081a8;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+.bigBtnEasy {
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+  background: -moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: -ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7892c2", endColorstr="#476e9e",GradientType=0);
+  background-color: #7892c2;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 70px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.bigBtnMed {
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+  background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+  background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffec64", endColorstr="#ffab23",GradientType=0);
+  background-color: #ffec64;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 70px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.bigBtnHard {
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+  background: -moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+  background: -webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+  background: -o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+  background: -ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f24537", endColorstr="#c62d1f",GradientType=0);
+  background-color: #f24537;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 70px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.5em;
+}
+
+.bigBtnGreen {
+  width: 96px;
+  text-align: center;
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #CED400), color-stop(1, #999700));
+  background: -moz-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -webkit-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -o-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -ms-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: linear-gradient(to bottom, #CED400 5%, #999700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#CED400", endColorstr="#999700",GradientType=0);
+  background-color: #CED400;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid green;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 0.5em;
+}
+
+.btnOther {
+  width: 56px;
+  height: 46px;
+  text-align: center;
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2dabf9", endColorstr="#0688fa",GradientType=0);
+  background-color: #2dabf9;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #0081a8;
+  display: inline-block;
+  cursor: pointer;
+  color: #38000d;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.8em 0.2em 0 0.2em;
+}
+
+.flag {
+  margin: 0.5em;
+  -moz-box-shadow: 0px 10px 14px -7px #000;
+  -webkit-box-shadow: 0px 10px 14px -7px #000;
+  box-shadow: 0px 10px 14px -7px #000;
+  width: 6em;
+  height: 3.5em;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.gameMenuWhilePlaying {
+  margin-top: 1em;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratulation-msg {
+  margin: 1em 0 1em 0;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-icon {
+  width: 26px;
+  height: auto;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.sound-icon {
+  width: 26px;
+  height: auto;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.game-section {
+  display: none;
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 110px;
+  width: 110px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: url("../img/logo-transparent-small.png") no-repeat center center/contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match {
+  transform: rotateY(180deg);
+}
+
+#myModal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 10px;
+  /* Location of the box */
+  width: 300px;
+  /* Full width */
+  height: 400px;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #CED400), color-stop(1, #999700));
+  background: -moz-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -webkit-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -o-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: -ms-linear-gradient(top, #CED400 5%, #999700 100%);
+  background: linear-gradient(to bottom, #CED400 5%, #999700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#CED400", endColorstr="#999700",GradientType=0);
+  border: 1px solid green;
+  border-radius: 4px;
+  box-shadow: 0px 10px 14px -7px #000;
+}
+
+#modalContent {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animation;
+  animation-duration: 0.4s;
+}
+
+.table {
+  width: 100%;
+}
+
+td {
+  max-width: 35px;
+  width: 16.666%;
+}
+
+.table-header {
+  margin-bottom: 0.5em;
+}
+.table-header h3 {
+  margin: 0.5em 0 0 0;
+}
+
+.table-language {
+  width: 50%;
+}
+
+.medal-icon {
+  width: 20px;
+  height: auto;
+}
+
+/* Add Animation */
+@-webkit-keyframes animation {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animation {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+#closeModal {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closeModal:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .bigBtnEasy {
+    margin: 0.5em 0.5em 1em 0.5em;
+  }
+
+  .bigBtnMed {
+    margin: 0.5em 0.5em 1em 0.5em;
+  }
+
+  .bigBtnHard {
+    margin: 0.5em 0.5em 1em 0.5em;
+  }
+
+  .flagDiv {
+    margin-bottom: 2em;
+  }
+
+  .bigBtnBlue {
+    width: 180px;
+    padding: 15px 50px;
+  }
+
+  .bigBtnGreen {
+    width: 180px;
+    padding: 15px 50px;
+  }
+
+  .memory-game-difficulty {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .memory-game-other {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid {
+    width: 580px;
+  }
+
+  .congratulation-msg h2 {
+    width: 580px;
+  }
+}
+/* DESKTOP */
+
+/*# sourceMappingURL=style.css.map */
